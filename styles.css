@@ -1,0 +1,82 @@
+.header {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: salmon;
+  color: white;
+}
+
+.logo-container img {
+  height: 50px;
+  width: 135px;
+}
+
+nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.animate {
+  width: 500px;
+  height: 600px;
+  margin: 20px auto;
+  background: red;
+  /* animation: name duration timing-function delay iteration-counter direction
+    fill-mode; */
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 375px) {
+  nav {
+    display: none;
+  }
+  .header {
+    background: aqua;
+  }
+  .logo-container {
+    width: 100%;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+}
+
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+    background: orangered;
+  }
+  to {
+    transform: rotate(1080deg);
+    background: orange;
+  }
+} */
+
+@keyframes spin {
+  0% {
+  }
+
+  25% {
+  }
+
+  50% {
+  }
+
+  75% {
+  }
+}
